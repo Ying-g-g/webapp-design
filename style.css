@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    background-color: #FFFFD9;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ------------------------- NAVIGATION BAR ------------------------- */
+nav {
+    background-color: #C1DBE8;
+    width: 75%;
+    height: auto;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    z-index: 100;
+    font-size: 1.1rem;
+    text-align: center;
+    position: fixed;
+    top: 3%;
+    left: 50;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    flex-grow: 1;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #86A1BE;
+    color: white;
+    border-radius: 20px;
+}
+
+/* ------------------------- SECTION (REUSABLE) ------------------------- */
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* ------------------------- HOME SECTION ------------------------- */
+.home-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 2%;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+}
+
+.home-image-left img {
+    width: min(350px, 40vw);
+    height: auto;
+    border-radius: 15px;
+}
+
+.home-text-right-top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.home-text-right-top h1 {
+    font-size: clamp(1.5rem, 4vw + 1rem, 3rem);
+}
+
+.home-text-right-top h2 {
+    font-size: clamp(2.5rem, 3vw + 1rem, 4.5rem);
+}
+
+.home-text-right-top h3 {
+    font-size: clamp(1rem, 2vw + 0.5rem, 2rem);
+}
+
+.home-button-right-btm {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 8%;
+}
+
+.home-button-right-btm button {
+    background-color: #C1DBE8;
+    color: black;
+    display: inline-block;
+    height: auto;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    box-shadow: 2px 5px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.home-button-right-btm button:hover {
+    background-color: #86A1BE;
+    color: white;
+}
+
+/* ------------------------- ABOUT ME SECTION ------------------------- */
+.about-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 2%;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    text-align: left;
+}
+
+.about-text-left {
+    width: 45%;
+    text-align: left;
+}
+
+.about-text-left h2{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-family: "Yesteryear", cursive;
+}
+
+.about-text-left p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.about-image-right {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image-right img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* ------------------------- PROJECT SECTION ------------------------- */
+#project h2 {
+    font-size: 4rem;
+    margin: 0.5rem 0;
+    text-align: center;
+    font-family: "Allura", cursive;
+}
+
+#project {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.project-horizontal-wrapper {
+    display: flex;
+}
+
+.project-wrapper {
+    width: 30%;
+    background-color: #43302E;
+    color: white;
+    border-radius: 35px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    padding: 1rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.project-top img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.project-bottom {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-bottom-text h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 0.75rem 0;
+    font-family: "Hi Melody", sans-serif;
+}
+
+.project-bottom-text p {
+    font-size: 1rem;
+    margin-top: 0 0 1rem 0;
+    text-align: justify;
+}
+
+.project-bottom-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.project-bottom-btn button {
+    background-color: #C1DBE8;
+    padding: 1rem 0.5rem;
+    border-radius: 50px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-top: 20%;
+}
+
+.project-bottom-btn button:hover {
+    background-color: #86A1BE;
+}
+
+.project-bottom-extra-text {
+    margin-top: 2rem;
+}
+
+#p1-details {
+    text-align: left;
+}
+
+#p2-details {
+    text-align: left;
+}
+
+#p3-details {
+    text-align: left;
+}
+
+/* ------------------------- CONTACT SECTION ------------------------- */
+#contact {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+}
+
+.contact-left, .contact-right {
+    width: 45%;
+}
+
+.contact-left img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+}
+
+.special-text {
+    font-family: "Dancing Script", cursive;
+    color: #C8C7FF;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+}
+
+.contact-right h2 {
+    font-size: 5rem;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.contact-right .contact-text {
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.contact-right .contact-text p {
+    font-size: 1.5rem;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+/* ------------------------- FOOTER ------------------------- */
+#footer {
+    min-height: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #43302E;
+}
+
+#footer p {
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+}
+
