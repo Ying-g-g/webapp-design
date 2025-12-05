@@ -349,6 +349,7 @@ nav ul li a:hover {
 
 /* ------------------------- TABLET SIZE ------------------------- */
 @media (max-width: 768px) {
+    /* === NAVIGATION BAR === */
     nav {
         width: 90%;
         font-size: 1rem;
@@ -360,7 +361,7 @@ nav ul li a:hover {
         gap: 1rem;
     }
 
-    /* Home section */
+    /* === HOME SECTION === */
     .home-wrapper {
         gap: 2rem;
         padding: 1rem;
@@ -388,7 +389,7 @@ nav ul li a:hover {
         padding: 0.8rem 2rem;
     }
 
-    /* About section */
+    /* === ABOUT SECTION === */
     .about-text-left, .about-image-right {
         width: 80%;
         text-align: center;
@@ -402,13 +403,13 @@ nav ul li a:hover {
         font-size: 1rem;
     }
 
-    /* Projects: 2 per row */
+    /* === PROJECT SECTION === */
     .project-wrapper {
         width: 45%;
         margin: 1rem;
     }
 
-    /* Contact */
+    /* === CONTACT SECTION === */
     .contact-left, .contact-right {
         width: 80%;
         text-align: center;
@@ -422,6 +423,7 @@ nav ul li a:hover {
 
 /* ------------------------- MOBILE SIZE ------------------------- */
 @media (max-width: 480px) {
+    /* === NAVIGATION BAR === */
     nav {
         width: 100%;
         left: 0;
@@ -442,7 +444,7 @@ nav ul li a:hover {
         padding: 0.5rem 0.5rem;
     }
 
-    /* Home */
+    /* === HOME SECTION === */
     .home-wrapper {
         flex-direction: column;
         text-align: center;
@@ -479,7 +481,7 @@ nav ul li a:hover {
         padding: 0.8rem;
     }
 
-    /* About */
+    /* === ABOUT SECTION === */
     .about-text-left, .about-image-right {
         width: 100%;
         text-align: center;
@@ -493,7 +495,7 @@ nav ul li a:hover {
         font-size: 1rem;
     }
 
-   
+    /* === PROJECT SECTION === */
     #project {
         flex-direction: column;
         align-items: center;
@@ -514,7 +516,7 @@ nav ul li a:hover {
         font-size: 1.2rem;
     }
 
-    /* Contact */
+    /* === CONTACT SECTION === */
     .contact-left, .contact-right {
         width: 100%;
         text-align: center;
