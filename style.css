@@ -124,6 +124,10 @@ nav ul li a:hover {
 }
 
 /* ------------------------- ABOUT ME SECTION ------------------------- */
+#about {
+    background-color: #D6C5DB;
+}
+
 .about-wrapper {
     display: flex;
     justify-content: center;
@@ -146,9 +150,11 @@ nav ul li a:hover {
 }
 
 .about-text-left h2 {
-    font-size: 3.5rem;
+    font-size: 5rem;
     margin-bottom: 1rem;
     font-family: "Yesteryear", cursive;
+    color: whitesmoke;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
 }
 
 .about-text-left p {
@@ -172,15 +178,17 @@ nav ul li a:hover {
 /* ------------------------- PROJECT SECTION ------------------------- */
 #project h2 {
     font-size: 4rem;
-    margin: 0.5rem 0;
     text-align: center;
     font-family: "Allura", cursive;
+    margin-top: 6rem;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 #project {
+    background-color: #FBFFF3;
     width: 100%;
     min-height: 100vh;
-    margin-top: 2%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -215,6 +223,12 @@ nav ul li a:hover {
     padding: 1rem;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+
+.project-bottom-text {
+    flex-grow: 1;
 }
 
 .project-bottom-text h3 {
@@ -243,7 +257,7 @@ nav ul li a:hover {
     box-shadow: 0 5px 5px rgba(0,0,0,0.2);
     cursor: pointer;
     font-size: 0.9rem;
-    margin-top: 20%;
+    margin-top: 1;
 }
 
 .project-bottom-btn button:hover {
@@ -251,7 +265,8 @@ nav ul li a:hover {
 }
 
 .project-bottom-extra-text {
-    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 #p1-details, #p2-details, #p3-details {
@@ -489,7 +504,7 @@ nav ul li a:hover {
         flex-direction: column;
         width: 100%;
     }
-    
+
     .project-wrapper {
         width: 90%;
         margin: 0.5rem auto;
