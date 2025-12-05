@@ -412,14 +412,19 @@ nav ul li a:hover {
         left: 0;
         transform: none;
         border-radius: 0;
-        padding: 0.6rem 1rem;
+        padding: 0.6rem 0.2rem;
         top: 0;
         font-size: 0.9rem;
     }
 
     nav ul {
-        flex-direction: column;
-        gap: 0.5rem;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 0;
+    }
+
+    nav ul li a {
+        padding: 0.5rem 0.5rem;
     }
 
     /* Home */
@@ -427,7 +432,7 @@ nav ul li a:hover {
         flex-direction: column;
         text-align: center;
         gap: 1.5rem;
-        margin-top: 4rem;
+        margin-top: 5rem;
         padding: 1rem;
     }
 
