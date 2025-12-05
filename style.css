@@ -478,7 +478,18 @@ nav ul li a:hover {
         font-size: 1rem;
     }
 
-    /* Projects: 1 per row */
+   
+    #project {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2rem;
+    }
+
+    .project-horizontal-wrapper {
+        flex-direction: column;
+        width: 100%;
+    }
+    
     .project-wrapper {
         width: 90%;
         margin: 0.5rem auto;
